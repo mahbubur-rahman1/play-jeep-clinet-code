@@ -13,13 +13,13 @@ const Navbar = () => {
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                             <li><Link to="/home">Home </Link></li>
                             <li tabIndex={0}>
-                            <Link to="/details">
-                                Details
+                            <Link to="/alltoys">
+                            All Toys
 
                             </Link>
 
                             </li>
-                            <li><a>Item </a></li>
+                            <li><Link to="blog">Blogs</Link></li>
                         </ul>
                     </div>
                     <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
@@ -28,12 +28,15 @@ const Navbar = () => {
                     <ul className="menu menu-horizontal px-1">
                         <li><Link to="/home">Home </Link></li>
                         <li tabIndex={0}>
-                        <Link to="/details">
-                                Details
+                        <Link to="/alltoys">
+                            All Toys
 
                             </Link>
                         </li>
                         <li><Link to="blog">Blogs</Link></li>
+
+                        <li><Link to="mytoy">My Toy</Link></li>
+                        <Link to="">Add Toy</Link>
                     </ul>
                 </div>
                 <div className="navbar-end">

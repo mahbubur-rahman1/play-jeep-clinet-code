@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Details = () => {
+const AllToy = () => {
     return (
         <div>
             <h1 className=' '>Hello many pepole wold</h1> 
@@ -8,4 +8,4 @@ const Details = () => {
     );
 };
 
-export default Details;
+export default AllToy;

@@ -4,9 +4,9 @@ import {
 } from "react-router-dom";
 import Main from "../Main/Main";
 import Home from "../All-Home/Home/Home";
-import Details from "../Details/Details";
 import Login from "../pages/Login/Login/Login";
 import Blogs from "../Blogs/Blogs";
+import AllToy from "../AllToy/AllToy";
 
 
 
@@ -21,8 +21,8 @@ const router = createBrowserRouter([
                 element: <Home></Home>
             },
             {
-                path: "/details",
-                element: <Details></Details>
+                path: "alltoys",
+                element: <AllToy></AllToy>
             },
             {
                 path: "/login",
