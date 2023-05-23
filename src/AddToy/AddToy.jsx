@@ -2,11 +2,41 @@ import React from 'react';
 import useTitle from '../hoks/useTitle';
 
 const AddToy = () => {
-    useTitle("Add Toy")
+   
+    const addToysHandler = event => {
+        event.preventDefault();
+        const form = event.target;
+
+        const name = form.name.value;
+        const details = form.details.value;
+        const sellername = form.sellername.value;
+        const selleremail = form.selleremail.value;
+        const quantity = form.quantity.value;
+        const company = form.company.value;
+        const date = form.date.value;
+        const price = form.price.value;
+        const photo = form.photo.value;
+
+        const allInformation = { name, details, sellername, selleremail, quantity, company, date, photo, price }
+        console.log(allInformation)
+
+        fetch('https://toy-fullstack-server-habib-rahmanhabib.vercel.app/Toys', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(allInformation)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+            })
+    }
+
     return (
         <div>
             <div className='bg-blue-600 my-2'>
-                <form className='p-3 ' >
+                <form onSubmit={addToysHandler} className='p-3 ' >
                     <div className="flex mb-8">
                         <div className="form-control md:w-1/4">
                             <label className="label">

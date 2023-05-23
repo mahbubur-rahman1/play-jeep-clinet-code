@@ -134,8 +134,10 @@ const Home = () => {
                 }
             </div>
 
+            
+
             <div className='shadow-lg'>
-                <h1 className='text-5xl text-sky-600 text-center my-6'>Ouer Visitor</h1>
+                <h1 className='text-5xl text-red-600 text-center my-6'>Ouer Client</h1>
                 <hr />
                 <div data-aos="fade-up"
                     data-aos-anchor-placement="center-bottom" className='grid md:grid-cols-4 my-8 justify-center'>
