@@ -10,7 +10,7 @@ const MyToy = () => {
     // const myToyss = useLoaderData()
     const [myToys, setMyToys] = useState([])
     console.log(myToys)
-    const url = "http://localhost:5000/toys"
+    const url = "https://assinment-server-site-mahbubur-rahman1.vercel.app/toys"
     useEffect( ()=>{
         fetch(url)
         .then(res => res.json())
@@ -18,7 +18,7 @@ const MyToy = () => {
             setMyToys(data)
          console.log(data)
         })
-    },[])
+    },[url])
 
     return (
         <div>

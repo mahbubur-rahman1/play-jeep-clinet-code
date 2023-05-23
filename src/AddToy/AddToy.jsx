@@ -23,7 +23,7 @@ const AddToy = () => {
         const allInformation = { name, details, sellername, selleremail, quantity, company, date, photo, price }
         console.log(allInformation)
 
-        fetch('http://localhost:5000/toys', {
+        fetch('https://assinment-server-site-mahbubur-rahman1.vercel.app/toys', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

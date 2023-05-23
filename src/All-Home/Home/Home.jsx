@@ -14,7 +14,7 @@ const Home = () => {
 
     // const [toys, setToys] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://assinment-server-site-mahbubur-rahman1.vercel.app/products')
             .then(res => res.json())
             .then(data => {
                 setTab(data)
@@ -134,7 +134,7 @@ const Home = () => {
                 }
             </div>
 
-            
+
 
             <div className='shadow-lg'>
                 <h1 className='text-5xl text-red-600 text-center my-6'>Ouer Client</h1>

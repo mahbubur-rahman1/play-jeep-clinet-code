@@ -13,7 +13,7 @@ const ToysCard = ({ toy }) => {
                         <p className=''><span className='font-bold'>Price: </span>{price}</p>
                         <p className=''><span className='font-semibold'>Rating: </span>{rating}</p>
                         <div className="card-actions ">
-                            <Link to={`/toydetails/${_id}`}><button className="btn btn-primary">View Details</button></Link>
+                            <Link to={`toydetails/${_id}`}><button className="btn btn-primary">View Details</button></Link>
                         </div>
                     </div>
                 </div>

@@ -5,7 +5,7 @@ const Blogs = () => {
     useTitle("Blogs")
     return (
         <div>
-            <div className='grid grid-cols-2  gap-2 gap-3 shadow-xl'>
+            <div className='grid md:grid-cols-2  gap-2 gap-3 shadow-xl'>
                 <div className='card shadow-xl p-7 mb-2'>
                     <h1 className='text-2xl font-semibold text-orange-600'>Quaction: What is an access token and refresh token? How do they work and where should we store them on the client-side? </h1>
                     <h3 className='text-green-600 font-bold'>Answer: </h3>
