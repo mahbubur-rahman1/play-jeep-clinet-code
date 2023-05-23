@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyB9Rl8g8dic4Q2c_OIMEB7XG9C-Q0T6VYM",
-  authDomain: "assignment-chef-recipe.firebaseapp.com",
-  projectId: "assignment-chef-recipe",
-  storageBucket: "assignment-chef-recipe.appspot.com",
-  messagingSenderId: "856155850840",
-  appId: "1:856155850840:web:b1cf1608c205d9c512222d"
+  apiKey: "AIzaSyA0Um7RAxbp3iowfgHr1b9ptMXq_WP_Pnc",
+  authDomain: "assingment-client-site.firebaseapp.com",
+  projectId: "assingment-client-site",
+  storageBucket: "assingment-client-site.appspot.com",
+  messagingSenderId: "624396799897",
+  appId: "1:624396799897:web:0c884fbda7e13d3feecd08"
 };
 
 // Initialize Firebase

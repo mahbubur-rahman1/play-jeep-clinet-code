@@ -6,7 +6,7 @@ const AllToy = () => {
     useTitle("All Toy")
 
     const [data, setData] = useState([])
-    console.log(data)
+   
 
     useEffect( ()=>{
         fetch('http://localhost:5000/toys')
