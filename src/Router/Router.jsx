@@ -11,6 +11,7 @@ import AddToy from "../AddToy/AddToy";
 import MyToy from "../MyToy/MyToy";
 import ViewDetails from "../All-Home/ViewDetails/ViewDetails";
 import Register from "../pages/Login/Register/Register";
+import ErrorPage from "../ErrorPage/ErrorPage";
 
 
 
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <Main></Main>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: "/",

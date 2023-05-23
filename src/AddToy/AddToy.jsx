@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import useTitle from '../hoks/useTitle';
+import { AuthContext } from '../provider/AuthProviders';
+import Swal from 'sweetalert2'
 
 const AddToy = () => {
-   
+    const { user } = useContext(AuthContext)
+
     const addToysHandler = event => {
         event.preventDefault();
         const form = event.target;
@@ -30,6 +33,13 @@ const AddToy = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data)
+                Swal.fire({
+                    position: 'top-center',
+                    icon: 'success',
+                    title: 'Added your product',
+                    showConfirmButton: false,
+                    timer: 1500
+                  })
             })
     }
 
@@ -84,7 +94,7 @@ const AddToy = () => {
                             </label>
                             <label className="input-group">
 
-                                <input type="text" placeholder="Enter Seller Email" name="selleremail" className="input input-bordered w-full" />
+                                <input type="text" value={user?.email} name="selleremail" className="input input-bordered w-full" />
                             </label>
                         </div>
                         <div className="form-control md:w-1/4 ms-4">

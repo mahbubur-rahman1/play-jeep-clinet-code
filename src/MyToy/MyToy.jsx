@@ -3,16 +3,16 @@ import { useEffect, useState } from 'react';
 import useTitle from '../hoks/useTitle';
 import { useLoaderData } from 'react-router-dom';
 import ToyTabla from './ToyTabla';
-const MyToy = () => {
-  
 
+
+const MyToy = () => {
 
     // const myToyss = useLoaderData()
     const [myToys, setMyToys] = useState([])
     console.log(myToys)
-
+    const url = "http://localhost:5000/toys"
     useEffect( ()=>{
-        fetch('http://localhost:5000/toys')
+        fetch(url)
         .then(res => res.json())
         .then(data => {
             setMyToys(data)
