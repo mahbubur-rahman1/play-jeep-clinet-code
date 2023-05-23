@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ToysCard from '../ToysCard/ToysCard';
+import useTitle from '../../hoks/useTitle';
 
 const Home = () => {
     const [tabs, setTab] = useState([])
@@ -11,6 +12,8 @@ const Home = () => {
                 setTab(data)
             })
     })
+
+    useTitle("Home")
 
     return (
 

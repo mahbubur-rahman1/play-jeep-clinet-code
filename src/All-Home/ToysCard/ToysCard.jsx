@@ -9,8 +9,8 @@ const ToysCard = ({ toy }) => {
                     <figure><img className='h-72' src={picture} alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title font-bold">{name}</h2>
-                        <p  className='text-2xl'>{price}</p>
-                        <p className=''>{ rating}</p>
+                        <p  className='text-2xl'><span className='font-bold'>Price: </span>{price}</p>
+                        <p className='text-2xl'><span className='font-semibold'>Rating: </span>{ rating}</p>
                         <div className="card-actions ">
                             <button className="btn btn-primary">View Details</button>
                         </div>

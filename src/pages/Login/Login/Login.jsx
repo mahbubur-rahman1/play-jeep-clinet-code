@@ -2,6 +2,8 @@ import React, { useContext, } from 'react';
 import { Link, useLocation, useNavigate } from "react-router-dom";
 // import { FaGoogle, FaGithub } from 'react-icons/fa';
 import { AuthContext } from '../../../provider/AuthProviders';
+import useTitele from '../../../hoks/useTitle';
+import useTitle from '../../../hoks/useTitle';
 
 // import { toast } from 'react-hot-toast';
 
@@ -13,7 +15,8 @@ const Login = () => {
     const location = useLocation();
     // console.log('login page location', location)
     const from = location.state?.from?.pathname || '/'
-
+ 
+    useTitle("Login")
 
     const handleLogin = event => {
         event.preventDefault();
@@ -47,6 +50,7 @@ const Login = () => {
     }
 
     return (
+        
         <div className='container mx-auto bg-purple-300 rounded-lg py-2'>
             <h3 className=' w-80 py-2 mt-2 mx-auto text-purple-100 font-bold text-lg rounded-lg bg-purple-900 text-center'>Please Login</h3>
             <form onSubmit={handleLogin}  className="form-control w-full max-w-xs mx-auto">

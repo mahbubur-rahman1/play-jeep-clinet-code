@@ -1,16 +1,10 @@
 import React from 'react';
+import useTitle from '../hoks/useTitle';
 
 const Blogs = () => {
+    useTitle("Blogs")
     return (
         <div>
-            {/* <div className="card w-96 bg-base-100 shadow-xl">
-                <div className="card-body">
-                    <h2 className="card-title">Card title!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    
-                </div>
-            </div> */}
-
             <div className='grid grid-cols-2 gap-2 gap-3 shadow-xl'>
                 <div className='card shadow-xl mb-2'>
                     <h1 className='text-2xl font-semibold text-orange-600'>Quaction: What is an access token and refresh token? How do they work and where should we store them on the client-side? </h1>
