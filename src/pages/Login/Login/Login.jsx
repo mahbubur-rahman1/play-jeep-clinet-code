@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from '../../../provider/AuthProviders';
 import useTitele from '../../../hoks/useTitle';
 import useTitle from '../../../hoks/useTitle';
+import Swal from 'sweetalert2'
 
 // import { toast } from 'react-hot-toast';
 
@@ -38,6 +39,13 @@ const Login = () => {
             console.log(loggedUser);
             navigate(from, {replace: true})
             toast.success('success login')
+            Swal.fire({
+                position: 'top-center',
+                icon: 'success',
+                title: 'Login is succesfull',
+                showConfirmButton: false,
+                timer: 1500
+              })
         })
         .catch(error => console.log(error))
     }
@@ -70,7 +78,7 @@ const Login = () => {
 
                 <button className='btn btn-accent mt-2' type='submit'>Login</button>
 
-                <p>Don't have an account <span> <Link className='link link-primary' to="/register">Registration</Link></span></p>
+                <p>Don't have an account <span> <Link to="/register" className='link link-primary' >Registration</Link></span></p>
                 <p onClick={handleGoogleSignIn} className='btn btn-error w-80 py-2 mt-2 mx-auto text-center'>
                     Login With Google
                 </p>

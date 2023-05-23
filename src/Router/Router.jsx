@@ -10,6 +10,7 @@ import AllToy from "../AllToy/AllToy";
 import AddToy from "../AddToy/AddToy";
 import MyToy from "../MyToy/MyToy";
 import ViewDetails from "../All-Home/ViewDetails/ViewDetails";
+import Register from "../pages/Login/Register/Register";
 
 
 
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
             {
                 path: "/login",
                 element: <Login></Login>
+            },
+            {
+                path: "register",
+                element: <Register></Register>
             },
             {
                 path: "blog",

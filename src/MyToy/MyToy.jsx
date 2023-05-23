@@ -1,22 +1,24 @@
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import useTitle from '../hoks/useTitle';
 import { useLoaderData } from 'react-router-dom';
+import ToyTabla from './ToyTabla';
 const MyToy = () => {
   
 
 
-    const myToyss = useLoaderData()
-    const [myToys, setmyToys] = useState(myToyss)
+    // const myToyss = useLoaderData()
+    const [myToys, setMyToys] = useState([])
     console.log(myToys)
 
-    // useEffect( ()=>{
-    //     fetch('http://localhost:5000/toys')
-    //     .then(res => res.json())
-    //     .then(data => {
-    //      console.log(data)
-    //     })
-    // },[])
+    useEffect( ()=>{
+        fetch('http://localhost:5000/toys')
+        .then(res => res.json())
+        .then(data => {
+            setMyToys(data)
+         console.log(data)
+        })
+    },[])
 
     return (
         <div>
@@ -38,14 +40,14 @@ const MyToy = () => {
                     </thead>
 
 
-                    {/* {
-                        myToys.map(toy => <ToyTablae
+                    {
+                        myToys.map(toy => <ToyTabla
                             key={toy._id}
                             toy={toy}
                             myToys={myToys}
-                            setmyToys={setmyToys}
-                        ></ToyTablae>)
-                    } */}
+                            setMyToys={setMyToys}
+                        ></ToyTabla>)
+                    }
 
 
                 </table>
