@@ -134,7 +134,7 @@ const Home = () => {
                 }
             </div>
 
-            <div>
+            <div className='shadow-lg'>
                 <h1 className='text-5xl text-sky-600 text-center my-6'>Ouer Visitor</h1>
                 <hr />
                 <div data-aos="fade-up"
@@ -153,7 +153,7 @@ const Home = () => {
                             <p className='text-1xl'> <span className='text-1xl font-semibold mt-5'>Propetion:</span> Banker</p>
                         </div>
                     </div>
-                    <div>
+                    <div className=''>
                         <img className='rounded-full h-56 w-56' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSevZUdSn7F4eYaPIAChEMz6O4BRBAJ1sM0gA&usqp=CAU" alt="" />
                         <div className='mt-4'>
                             <p className='text-1xl'> <span className='text-1xl font-semibold mt-5'>Name:</span> Caypran Pamuta</p>
