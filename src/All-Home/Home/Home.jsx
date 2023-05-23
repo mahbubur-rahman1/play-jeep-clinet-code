@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ToysCard from '../ToysCard/ToysCard';
 import useTitle from '../../hoks/useTitle';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import 'aos/dist/aos.css';
 AOS.init();
 // import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 // import 'react-tabs/style/react-tabs.css';
@@ -11,7 +11,7 @@ AOS.init();
 
 const Home = () => {
     const [tabs, setTab] = useState([])
-    
+
     // const [toys, setToys] = useState([])
     useEffect(() => {
         fetch('http://localhost:5000/products')
@@ -26,7 +26,7 @@ const Home = () => {
     return (
 
         <div>
-            <div className="p-6">
+            {/* <div className="p-6">
                 <div className="">
                     <div className="carousel  h-screen w-full">
                         <div id="slide1" className="carousel-item  relative w-full">
@@ -61,10 +61,32 @@ const Home = () => {
 
 
                 </div>
-            </div>
-             {/* react tabs section */}
+            </div> */}
+            {/* carusal */}
 
-             {/* <Tabs>
+            <div className="carousel w-full">
+                <div id="item1" className="carousel-item w-full">
+                    <img src="https://thumbs.dreamstime.com/b/childrens-toys-section-small-toy-jeep-sky-more-shopping-mall-latvia-riga-march-childrens-toys-section-small-toy-272682489.jpg" className="w-full" />
+                </div>
+                <div id="item2" className="carousel-item w-full">
+                    <img src="https://thumbs.dreamstime.com/b/toy-jeep-car-suv-truck-white-background-83729270.jpg" className="w-full" />
+                </div>
+                <div id="item3" className="carousel-item w-full">
+                    <img src="https://thumbs.dreamstime.com/b/cute-funny-blond-little-young-toddler-kid-child-boy-sitting-driving-riding-electric-toy-car-automobile-jeep-park-children-255995876.jpg" className="w-full" />
+                </div>
+                <div id="item4" className="carousel-item w-full">
+                    <img src="https://thumbs.dreamstime.com/b/black-toy-jeep-isolated-black-background-water-toy-jeep-isolated-black-background-water-253513439.jpg" className="w-full" />
+                </div>
+            </div>
+            <div className="flex justify-center w-full py-2 gap-2">
+                <a href="#item1" className="btn btn-xs">1</a>
+                <a href="#item2" className="btn btn-xs">2</a>
+                <a href="#item3" className="btn btn-xs">3</a>
+                <a href="#item4" className="btn btn-xs">4</a>
+            </div>
+            {/* react tabs section */}
+
+            {/* <Tabs>
                 <TabList>
                     <Tab>All Toys</Tab>
                     <Tab onClick={() => carHandler()}>Car</Tab>
@@ -134,7 +156,7 @@ const Home = () => {
 
             </Tabs> */}
 
-             {/* home page card section */}
+            {/* home page card section */}
             <div className='grid md:grid-cols-3 mx-auto gap-3'>
                 {
 

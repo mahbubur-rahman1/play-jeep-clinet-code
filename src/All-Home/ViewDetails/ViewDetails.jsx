@@ -9,7 +9,7 @@ const ViewDetails = () => {
 
     return (
         <div>
-            <div className='flex gap-10 items-center justify-items-center mx-auto w-8/12  '>
+            <div className='grid md:grid-cols-2 gap-10 shadow-lg m-4 items-center justify-items-center mx-auto w-8/12  '>
                 <div className=' '>
                     <img className='h-64 w-72' src={picture} alt="" />
                 </div>
