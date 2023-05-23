@@ -157,7 +157,7 @@ const Home = () => {
                                 Alibaba
                             </Link> <br />
                             <Link className=' mt-2 btn-outline btn btn-block btn-error' to="https://www.daraz.com.bd/">
-                                Daraz
+                            Daraz
                             </Link>
                         </div>
                     </div>
