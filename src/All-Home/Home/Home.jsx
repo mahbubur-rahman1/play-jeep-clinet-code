@@ -192,7 +192,7 @@ const Home = () => {
                         <img className='rounded-full h-56 w-56 text-center' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-nOp4v9KJmAEWxhZv_rCwZHX8EuVIjyPz3A&usqp=CAU" alt="" />
                         <div className='mt-4'>
                             <p className='text-1xl'> <span className='text-1xl font-semibold mt-5'>Name:</span> Adrin Pilon</p>
-                            <p className='text-1xl'> <span className='text-1xl font-semibold mt-5'>Propetion:</span> Marketing Manager</p>
+                            <p className='text-1xl'> <span className='text-1xl font-semibold mt-5'>Propetion:</span> Marketing Manager man  </p>
                         </div>
                     </div>
                     <div>
@@ -213,7 +213,7 @@ const Home = () => {
                         <img className='rounded-full h-56 w-56' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDsbilc7p4CbwwY2hwu6ziEpL_Szh_vxXbtg&usqp=CAU" alt="" />
 
                         <div className='mt-4'>
-                            <p className='text-1xl'> <span className='text-1xl font-semibold mt-5'>Name:</span> Steven Androws</p>
+                            <p className='text-1xl'> <span className='text-1xl font-semibold mt-5'>Name:</span> Steven & Androws</p>
                             <p className='text-1xl'> <span className='text-1xl font-semibold mt-5'>Propetion:</span> Self Empolyer</p>
                         </div>
                     </div>
