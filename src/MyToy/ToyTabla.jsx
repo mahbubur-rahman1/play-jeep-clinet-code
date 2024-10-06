@@ -31,7 +31,7 @@ const ToyTabla = ({ toy, myToys, setMyToys }) => {
             //     'Your file has been deleted.',
             //     'success'
             //  
-            fetch(`http://localhost:5000/toys/${_id}`,{
+            fetch(`https://assinment-server-site-mahbubur-rahman1.vercel.app/toys/${_id}`,{
                 method: 'DELETE'
             }
             )
